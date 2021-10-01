@@ -1,63 +1,74 @@
 <!DOCTYPE html>
-<!-- saved from url=(0031)https://codamstudentcouncil.nl/ -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Codam Student Council</title>
+	<title>Elections August 2021 - Codam Student Council</title>
 	<style>
-	body {
-		margin: 0;
-		font-family: sans-serif;
-	}
-	section {
-		padding: 32px;
-	}
-	section:last-of-type {
-		padding-bottom: 64px;
-	}
-	.center {
-		max-width: 800px;
-		margin: 0 auto;
-	}
-	.pretext {
-		background-color: azure;
-	}
-	.light {
-		color: #585858;
-		font-size: 0.7em;
-	}
-	.candidate {
-		display: flex;
-		margin: 32px 0;
-	}
-	.candidate img {
-		margin-right: 16px;
-		margin-top: auto;
-		margin-bottom: auto;
-		width: 200px;
-		height: 100%;
-		flex-grow: 0;
-		flex-shrink: 0;
-	}
-	@media (max-width: 600px) {
+		body {
+			margin: 0;
+			font-family: sans-serif;
+		}
+		section {
+			padding: 32px;
+		}
+		section:last-of-type {
+			padding-bottom: 64px;
+		}
+		.center {
+			max-width: 800px;
+			margin: 0 auto;
+		}
+		.pretext {
+			background-color: azure;
+		}
+		.light {
+			color: #585858;
+			font-size: 0.7em;
+		}
 		.candidate {
-			display: block;
+			display: flex;
+			margin: 32px 0;
 		}
 		.candidate img {
-			width: 100%;
+			margin-right: 16px;
+			margin-top: auto;
+			margin-bottom: auto;
+			width: 200px;
+			height: 100%;
+			flex-grow: 0;
+			flex-shrink: 0;
 		}
-	}
+		@media (max-width: 600px) {
+			.candidate {
+				display: block;
+			}
+			.candidate img {
+				width: 100%;
+			}
+		}
 	</style>
-	<template id="candidate-template"></template>
+	<template id="candidate-template">
+		<div class="candidate">
+			<img>
+			<div>
+				<h2></h2>
+				<h3></h3>
+				<p></p>
+			</div>
+		</div>
+	</template>
 </head>
 <body>
 	<section class="pretext">
 		<div class="center">
 			<h1>Dear Codam students!</h1>
 
-			<p>The Student Council would like to present you with a list of candidates running for the coming term. The 3 winning ones will be representing you for the next 8 months, from April until November 2021.</p>
+			<p>The Student Council would like to present you with a list of
+candidates running for the coming term. The 4 winning ones will be
+representing you for the next 8 months, from August until March 2022.</p>
 
-			<p>The elections will be held in the week of the 22<sup>nd</sup> - 28<sup>th</sup> of March. You will receive a link to a voting system in which you can choose up to 3 candidates that you think should represent the students at Codam. You can also choose to abstain. The top 3 candidates will become the Council members. <a href="https://electionbuddy.com/features/voting-systems/plurality-voting">Here</a> you can find more information about the system we use. The voting is fully anonymous and the results of the elections will be known only after it is finished.</p>
+			<p>The elections will be held in the week of the 19<sup>nd</sup> - 25<sup>th</sup> of July. You will receive a link to a voting system in which you can rank the candidates to your liking. You can also choose to abstain. The top 4 candidates will become the Council members. For this term we are testing preferential/ranked voting to get a fairer method of fixing ties, <a href="https://electionbuddy.com/preferential/" target="_blank" referrer="">you can read about that on this electionbuddy page</a>. The voting is fully anonymous and the results of the elections will be known only after it is finished.</p>
 
 			<p>It is very important for us and the candidates that you vote. Your participation gives us the legitimacy to represent you. Please get to know the candidates and their motivation to join the Student Council.</p>
 		</div>
@@ -66,104 +77,89 @@
 		<div class="center">
 			<h1>Candidates <span class="light">(in random order)</span></h1>
 			<div id="candidates">
-		<div class="candidate">
-			<img src="./HTML_files/gzeiliss.png" alt="Ģirts Zeilišs">
-			<div>
-				<h2>Ģirts Zeilišs</h2>
-				<h3>gzeiliss</h3>
-				<p>I'm gonna be honest with you, even I'm not sure if I would be a good candidate for student council. What I do know is that this school has been extremely kind to me and the people I have met at this school over the short period of time have changed my life, so I would like to give my best to give back all the kindness I have received from the wonderful community we all call Codam. Cheers!</p>
+				<div class="candidate">
+					<img src="./images/djonker.jpg" alt="Danny Jonker">
+					<div>
+						<h2>Danny Jonker</h2>
+						<h3>djonker</h3>
+						<p>I would focus on Privacy & Transparency, Switch to free(GPL) software AMAP, Petition to make PMs on Slack more private. Fix mistakes and unclear parts in the subjects and eval sheets, Improve the eval slot system. From the Backlog the Library idea is great, And I would love to realize it, But I would love to do anything to make Codam a better place for all. And uh Updated Software & A Dark Theme!"</p>
+					</div>
+				</div>
+				<div class="candidate">
+					<img src="./images/nhariman.jpg" alt="Niks Hariman">
+					<div>
+						<h2>Niks Hariman</h2>
+						<h3>nhariman</h3>
+						<p>I'm dedicated to promoting accessibility at Codam as well as helping out standardising procedures and writing advisory documents on how to better support various student populations at Codam. I believe awareness and education can help many people understand and familiarise themselves with concepts beyond their initial comfort zone.</p>
+					</div>
+				</div>
+				<div class="candidate">
+					<img src="./images/pde-bakk.jpg" alt="Peer de Bakker">
+					<div>
+						<h2>Peer de Bakker</h2>
+						<h3>bakk</h3>
+						<p>My (almost) two years at Codam have turned to be quite hectic.<br>I've seen a lot of peers (hehe) lose touch with the curriculum and drop out.<br>Right now it's up to us to figure out what works, what doesn't and what we need to do to make Codam great again.<br>And if you let me, I hope I can be of help.<br>That, and I think I could be a much needed voice for the underrepresented Codam Advanced.</p>
+					</div>
+				</div>
+				<div class="candidate">
+					<img src="./images/icikrikc.jpg" alt="Irem Ergu">
+					<div>
+						<h2>Irem Ergun Cikrikcioglu</h2>
+						<h3>icikrikc"</h3>
+						<p>Hi, I’m Irem from 2020 Cohort. Even if you don’t know me, I’m sure you’ve heard about my ridiculously long last name. I plan to work on the ambiguity of evaluation sheets, the possibility to evaluate curriculum, and boosting p2p environment. If you’d like to see a female/international representative at the Student Council, vote for me! I’ll make sure our unique names are pronounced correctly 🥳</p>
+					</div>
+				</div>
+				<div class="candidate">
+					<img src="./images/rvan-duy.jpg" alt="Ruben va">
+					<div>
+						<h2>Ruben van Duyneveldt</h2>
+						<h3>duy"</h3>
+						<p>My personal take on the council is that they are there to start a dialogue with the Bocal, when needed. Communication between the Bocal and the students is key. I am passionate to work on problems related to the quality of the curriculum and the evaluations, the time pressure students experience from the Black hole or other factors, as well look for ways to positively influence the community with.</p>
+					</div>
+				</div>
+				<div class="candidate">
+					<img src="./images/lravier.jpg" alt="Laure Ravier"">
+					<div>
+						<h2>Laure Ravier</h2>
+						<h3>lravier"</h3>
+						<p>I would love to be part of the student council because I really believe in Codam. My experience here has also taught me that we could do better in some areas. I'd love to help improve those!<br>If I became part of the student council, I'd focus on making sure we're doing everything we can to ensure that Codam's ideals are reflected in the experience of studying here. Will trade cookies for votes!</p>
+					</div>
+				</div>
+				<div class="candidate">
+					<img src="./images/jkoers.jpg" alt="Joppe Koers">
+					<div>
+						<h2>Joppe Koers</h2>
+						<h3>jkoers</h3>
+						<p>Every organisation needs rules to make sure that its members are treated equally and fairly. The 42 system and Codam work so well because they have hardly any rules on how you have to do your work. But, the fewer the rules, the more important every individual rule is.<br>The main ideas of the system are great. There are however a few details that still need some work. That is something I want to do.</p>
+					</div>
+				</div>
 			</div>
-		</div>
-	
-		<div class="candidate">
-			<img src="./HTML_files/vvissche.png" alt="Vincent Visschedijk">
-			<div>
-				<h2>Vincent Visschedijk</h2>
-				<h3>vvissche</h3>
-				<p>Hi! I’m Vincent. I like to cook, dance, code and fix flaws in systems. That last one generally is quite useless unless you are in a position to influence things. I think I’d be of value to the council with my critical view and ability to keep asking questions. I'm interested in and read a lot about: privacy, equality, improving peer-to-peer feedback, code quality, black hole system, communication.</p>
-			</div>
-		</div>
-	
-		<div class="candidate">
-			<img src="./HTML_files/cstaats.png" alt="Candace Staats">
-			<div>
-				<h2>Candace Staats</h2>
-				<h3>cstaats</h3>
-				<p>I care a lot about the school, and my fellow classmates. I want to be as involved in the school as I can, and to make things the best they can be. I love to work hard and to problem solve, and I think I can bring a unique view to the student council. I would love to be a voice for the students, and advocate for what we need!</p>
-			</div>
-		</div>
-	
-		<div class="candidate">
-			<img src="./HTML_files/nvan-aac.png" alt="Niels van Aacken">
-			<div>
-				<h2>Niels van Aacken</h2>
-				<h3>nvan-aac</h3>
-				<p>Who is this new candidate who is up for election??<br>Is he from the 2020 cohort? YES!<br>Is he passionate about helping peers? YES!<br>Is this former teacher opinionated about education? YES!<br>Does he love this community and wants to help it grow? YES!<br>Does he have some sweet sweet salsa moves? SI!<br>How about his humbleness? #1 on the humble list.<bt>Vote LijstNiels.</bt></p>
-			</div>
-		</div>
-	
-		<div class="candidate">
-			<img src="./HTML_files/jelvan-d.png" alt="Jelle van der Kooi">
-			<div>
-				<h2>Jelle van der Kooi</h2>
-				<h3>jelvan-d</h3>
-				<p>While I'm not sure I'd explicitly be a good candidate for the Student Council, I believe I can be a valuable asset to the community through all the experience I've gotten. Having helped in 5 Piscines, having worked for the Bocal and having helped in lots of Spark Sessions, I'd just love to help whoever I can and I believe the Student Council is an excellent platform to make sustainable change.</p>
-			</div>
-		</div>
-	
-		<div class="candidate">
-			<img src="./HTML_files/nphilipp.png" alt="Niki Philippart">
-			<div>
-				<h2>Niki Philippart</h2>
-				<h3>nphilipp</h3>
-				<p>I think I would be great council member because I love Codam, the last year has been rough but i have always loved the school, and want to make it even better, I feel like I'm good at getting to know and listening to the students of Codam in general which would really help me be a good council member.</p>
-			</div>
-		</div>
-	
-		<div class="candidate">
-			<img src="./HTML_files/dlambrec.png" alt="Dave Yvo Martinus Lambrechts">
-			<div>
-				<h2>Dave Yvo Martinus Lambrechts</h2>
-				<h3>dlambrec</h3>
-				<p>Hi there, I am from cohort Oct 2020. As a former secondary school, Montessori teacher, finding your own path and learning from your peers is great, but for everyone it can be a different experience. I would like, with your support, give back to Codam as a member of the student council. To help and advocate on behalf of cohorts, groups of students or individuals to the Staff. Thanks, Cheers Dave</p>
-			</div>
-		</div>
-	</div>
 		</div>
 	</section>
 	<section>
 		<div class="center">
 			<h1>Continuing current Council members</h1>
 
-			<p>Codam Student Council hosts elections every 4 months but each member serves for 8 months. That is because the terms are overlapping. Every four months, a part of the council members leaves and new members join in their place, keeping the total number of council members at six. This structure aims at transferring knowledge between the terms. In the coming term, starting in April, the winning candidates will join the following members from the previous Council representation. </p>
+			<p>Codam Student Council hosts elections every 4 months but eachmember serves for 8 months. That is because the terms are overlapping.Every four months, a part of the council members leaves and new membersjoin in their place, keeping the total number of council members at six. This structure aims at transferring knowledge between the terms. In the coming term, starting in August, the winning candidates will join the following members from the previous Council representation. </p>
+
 			<div id="continuing">
-		<div class="candidate">
-			<img src="./HTML_files/tevan-de.jpg" alt="Tessa van der Loo">
-			<div>
-				<h2>Tessa van der Loo</h2>
-				<h3>tevan-de</h3>
-				<p></p>
+				<div class="candidate">
+					<img src="./images/vvissche.jpg" alt="Vincent Visschedijk">
+					<div>
+						<h2>Vincent Visschedijk</h2>
+						<h3>vvsische</h3>
+						<p></p>
+					</div>
+				</div>
+				<div class="candidate">
+					<img src="./images/jelvan-d.jpg" alt="Jelle Van Der Kooi">
+					<div>
+						<h2>Jelle Van Der Kooi</h2>
+						<h3>jelvan-d</h3>
+						<p></p>
+					</div>
+				</div>
 			</div>
-		</div>
-	
-		<div class="candidate">
-			<img src="./HTML_files/akramp.jpg" alt="Angeli Kramp">
-			<div>
-				<h2>Angeli Kramp</h2>
-				<h3>akramp</h3>
-				<p></p>
-			</div>
-		</div>
-	
-		<div class="candidate">
-			<img src="./HTML_files/limartin.jpg" alt="Lindsay Martin">
-			<div>
-				<h2>Lindsay Martin</h2>
-				<h3>limartin</h3>
-				<p></p>
-			</div>
-		</div>
-	</div>
 		</div>
 	</section>
 	<section>
@@ -173,6 +169,7 @@
 			<p>A Student Council is a delegation of students within a school that serves the interests of students at that school. The Student Council at Codam consists of six students. These students represent the entire student body in conversations with (delegates) of the Bocal.  The Student Council is built to support students by speaking to the Bocal on their behalf, generate ideas to improve education and life in general at Codam and improve the connection between the students and the Bocal. The Student Council’s goal is to help Codam provide its students with the best possible education. Areas the Student Council can be focussing on are, for example, education quality (e.g. curriculum and evaluations), student support (financial and mental), facilities, and admissions (new students, piscines, selection). We strive to have a team as diverse as possible with regards to cohort, nationality, gender etc.</p>
 		</div>
 	</section>
+
 	<script>
 	const template = document.querySelector('#candidate-template');
 	const destCandidates = document.querySelector('#candidates');
@@ -180,61 +177,57 @@
 
 	let candidates = [
 		{
-			name: "Ģirts Zeilišs",
-			login: "gzeiliss",
-			description: "I'm gonna be honest with you, even I'm not sure if I would be a good candidate for student council. What I do know is that this school has been extremely kind to me and the people I have met at this school over the short period of time have changed my life, so I would like to give my best to give back all the kindness I have received from the wonderful community we all call Codam. Cheers!",
+			"name": "Danny Jonker",
+			"login": "djonker",
+			"description": "I would focus on Privacy & Transparency, Switch to free(GPL) software AMAP, Petition to make PMs on Slack more private. Fix mistakes and unclear parts in the subjects and eval sheets, Improve the eval slot system. From the Backlog the Library idea is great, And I would love to realize it, But I would love to do anything to make Codam a better place for all. And uh Updated Software & A Dark Theme!",
 		},
 		{
-			name: "Niels van Aacken",
-			login: "nvan-aac",
-			description: "Who is this new candidate who is up for election??<br>Is he from the 2020 cohort? YES!<br>Is he passionate about helping peers? YES!<br>Is this former teacher opinionated about education? YES!<br>Does he love this community and wants to help it grow? YES!<br>Does he have some sweet sweet salsa moves? SI!<br>How about his humbleness? #1 on the humble list.<bt>Vote LijstNiels.",
+			"name": "Niks Hariman",
+			"login": "nhariman",
+			"description": "I'm dedicated to promoting accessibility at Codam as well as helping out standardising procedures and writing advisory documents on how to better support various student populations at Codam. I believe awareness and education can help many people understand and familiarise themselves with concepts beyond their initial comfort zone."
 		},
 		{
-			name: "Jelle van der Kooi",
-			login: "jelvan-d",
-			description: "While I'm not sure I'd explicitly be a good candidate for the Student Council, I believe I can be a valuable asset to the community through all the experience I've gotten. Having helped in 5 Piscines, having worked for the Bocal and having helped in lots of Spark Sessions, I'd just love to help whoever I can and I believe the Student Council is an excellent platform to make sustainable change.",
+			"name": "Peer de Bakker",
+			"login": "pde-bakk",
+			"description": "My (almost) two years at Codam have turned to be quite hectic.<br>I've seen a lot of peers (hehe) lose touch with the curriculum and drop out.<br>Right now it's up to us to figure out what works, what doesn't and what we need to do to make Codam great again.<br>And if you let me, I hope I can be of help.<br>That, and I think I could be a much needed voice for the underrepresented Codam Advanced."
 		},
 		{
-			name: "Candace Staats",
-			login: "cstaats",
-			description: "I care a lot about the school, and my fellow classmates. I want to be as involved in the school as I can, and to make things the best they can be. I love to work hard and to problem solve, and I think I can bring a unique view to the student council. I would love to be a voice for the students, and advocate for what we need!",
+			"name": "Irem Ergun Cikrikcioglu",
+			"login": "icikrikc",
+			"description": "Hi, I’m Irem from 2020 Cohort. Even if you don’t know me, I’m sure you’ve heard about my ridiculously long last name. I plan to work on the ambiguity of evaluation sheets, the possibility to evaluate curriculum, and boosting p2p environment. If you’d like to see a female/international representative at the Student Council, vote for me! I’ll make sure our unique names are pronounced correctly 🥳"
 		},
 		{
-			name: "Vincent Visschedijk",
-			login: "vvissche",
-			description: "Hi! I’m Vincent. I like to cook, dance, code and fix flaws in systems. That last one generally is quite useless unless you are in a position to influence things. I think I’d be of value to the council with my critical view and ability to keep asking questions. I'm interested in and read a lot about: privacy, equality, improving peer-to-peer feedback, code quality, black hole system, communication.",
+			"name": "Ruben van Duyneveldt",
+			"login": "rvan-duy",
+			"description": "My personal take on the council is that they are there to start a dialogue with the Bocal, when needed. Communication between the Bocal and the students is key. I am passionate to work on problems related to the quality of the curriculum and the evaluations, the time pressure students experience from the Black hole or other factors, as well look for ways to positively influence the community with."
 		},
 		{
-			name: "Niki Philippart",
-			login: "nphilipp",
-			description: "I think I would be great council member because I love Codam, the last year has been rough but i have always loved the school, and want to make it even better, I feel like I'm good at getting to know and listening to the students of Codam in general which would really help me be a good council member.",
+			"name": "Laure Ravier",
+			"login": "lravier",
+			"description": "I would love to be part of the student council because I really believe in Codam. My experience here has also taught me that we could do better in some areas. I'd love to help improve those!<br>If I became part of the student council, I'd focus on making sure we're doing everything we can to ensure that Codam's ideals are reflected in the experience of studying here. Will trade cookies for votes!"
 		},
 		{
-			name: "Dave Yvo Martinus Lambrechts",
-			login: "dlambrec",
-			description: "Hi there, I am from cohort Oct 2020. As a former secondary school, Montessori teacher, finding your own path and learning from your peers is great, but for everyone it can be a different experience. I would like, with your support, give back to Codam as a member of the student council. To help and advocate on behalf of cohorts, groups of students or individuals to the Staff. Thanks, Cheers Dave",
-		},
+			"name": "Joppe Koers",
+			"login": "jkoers",
+			"description": "Every organisation needs rules to make sure that its members are treated equally and fairly. The 42 system and Codam work so well because they have hardly any rules on how you have to do your work. But, the fewer the rules, the more important every individual rule is.<br>The main ideas of the system are great. There are however a few details that still need some work. That is something I want to do."
+		}
 	];
 
 	let continuing = [
 		{
-			name: "Angeli Kramp",
-			login: "akramp",
+			name: "Vincent Visschedijk",
+			login: "vvissche",
 			description: "",
 		},
 		{
-			name: "Lindsay Martin",
-			login: "limartin",
-			description: "",
-		},
-		{
-			name: "Tessa van der Loo",
-			login: "tevan-de",
+			name: "Jelle Van Der Kooi",
+			login: "jelvan-d",
 			description: "",
 		}
 	];
 
-	// https://stackoverflow.com/a/12646864
+
+		// https://stackoverflow.com/a/12646864
 	function shuffleArray(array) {
 		for (let i = array.length - 1; i > 0; i--) {
 			const j = Math.floor(Math.random() * (i + 1));
@@ -252,9 +245,10 @@
 		clone.querySelector('h3').textContent = candidate.login;
 		// Allow linebreaks using <br>
 		clone.querySelector('p').innerHTML = candidate.description;
-		clone.querySelector('img').src = `${candidate.login}.png`;
+		clone.querySelector('img').src = `./images/${candidate.login}.jpg`;
 		clone.querySelector('img').alt = candidate.name;
 		destCandidates.appendChild(clone);
+		console.log("test");
 	});
 
 	destContinuing.innerHTML = '';
@@ -263,21 +257,10 @@
 		clone.querySelector('h2').textContent = continuing.name;
 		clone.querySelector('h3').textContent = continuing.login;
 		clone.querySelector('p').textContent = continuing.description;
-		clone.querySelector('img').src = `${continuing.login}.jpg`;
+		clone.querySelector('img').src = `./images/${continuing.login}.jpg`;
 		clone.querySelector('img').alt = continuing.name;
 		destContinuing.appendChild(clone);
 	});
 	</script>
-
-
-</body><style id="global-dark-mode" media="screen">html:before {
-    content: " ";
-    z-index: 100000000000000;
-    pointer-events: none;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.20);
-  }</style></html>
+</body>
+</html>
