@@ -1,0 +1,19 @@
+
+/*
+    Makes the Menu on small screens work without javascript.
+    Uses the #menu_open part of the URL, since that is then called "the target" to apply styles to that element.
+ */
+
+#menu_open {
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    opacity: 0;
+    z-index: -1;
+}
+
+#menu_open:target {
+    --tw-scale-x: .95;
+    --tw-scale-y: .95;
+    opacity: 1;
+    z-index: 100;
+}
