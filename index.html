@@ -65,7 +65,7 @@
 			<h1>Dear Codam students!</h1>
 
 			<p>The Student Council would like to present you with a list of
-candidates running for the coming term. The 4 winning ones will be
+candidates running for the coming term. The 5 winning ones will be
 representing you for the next 8 months, from December until July 2022.</p>
 
 			<p>The elections will be held in the week of the 22<sup>nd</sup> - 28<sup>th</sup> of November. You will receive a link to a voting system in which you can rank the candidates to your liking. You can also choose to abstain. The top 5 candidates will become the Council members. For this term we are testing preferential/ranked voting to get a fairer method of fixing ties, <a href="https://electionbuddy.com/preferential/" target="_blank" referrer="">you can read about that on this electionbuddy page</a>. The voting is fully anonymous and the results of the elections will be known only after it is finished.</p>
@@ -270,7 +270,6 @@ representing you for the next 8 months, from December until July 2022.</p>
 		clone.querySelector('img').src = `./images-candidates/${candidate.login}.jpg`;
 		clone.querySelector('img').alt = candidate.name;
 		destCandidates.appendChild(clone);
-		console.log("test");
 	});
 
 	destContinuing.innerHTML = '';
